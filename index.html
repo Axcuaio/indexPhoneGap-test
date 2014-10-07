@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>For practicing in class</title>
+</head>
+<body background="l56VsA.jpg">
+<p><marquee behavior="alternate" bgcolor="#fffff"><font face="arial"><font size="12"><img src="INDEX_LOGOME2.GIF" />Hello, World. - from YC</font></font></marquee></p>
+<script type="text/javascript">
+function AlertIt() 
+{
+	//亂數
+	var myrandom=Math.round(Math.random()*2)
+	//訊息清單
+	var messages=new Array()
+	messages[0]="幹嘛？"
+	messages[1]="想去買東西嗎？"
+	messages[2]="想看影片嗎？"
+	//連結清單
+	var links=new Array()
+	links[0]="http://www.google.com"
+	links[1]="http://www.yahoo.com"
+	links[2]="http://www.youtube.com"
+	//點下去要顯示
+	var answer = confirm (messages[myrandom])
+	//如果點「是」
+	if (answer)
+	window.location=links[myrandom]
+}
+//超連結讓他連到一個Javascript
+</script>
+
+<marquee onMouseOver="this.stop()" onMouseOut="this.start()" height="33%" direction="up" scrolldelay="4" scrollamount="3">
+<table width="100%" height="100%" border="0" align="center">
+	<tr>
+    	<td align="center" valign="middle">
+        	<a href="javascript:AlertIt();"><img src="l56VsA.jpg"><font face="arial"><font size="5">按我好嗎</font></font></a>
+        </td>
+    </tr>
+</table>
+</marquee>
+
+</body>
+</html>
